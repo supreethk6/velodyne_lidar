@@ -26,16 +26,16 @@ OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 """
 
-workspace(name = "velodyne_lidar")
+workspace(name = "velodyne_lidar_skk")
 
 # Point following dependency to Isaac SDK downloaded from https://developer.nvidia.com/isaac/downloads
 local_repository(
     name = "com_nvidia_isaac_engine",
-    path = "ISAAC_SDK_RELEASE/engine",
+    path = "/home/ki-ml-2/isaac/engine",
 )
 local_repository(
     name = "com_nvidia_isaac_sdk",
-    path = "ISAAC_SDK_RELEASE/sdk",
+    path = "/home/ki-ml-2/isaac/sdk",
 )
 
 load("@com_nvidia_isaac_engine//third_party:engine.bzl", "isaac_engine_workspace")
